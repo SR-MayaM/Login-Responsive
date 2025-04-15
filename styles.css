@@ -1,0 +1,307 @@
+*{
+    color: white;
+    font-family: sans-serif;
+    background-image: -moz-radial-gradient();
+}
+
+:root{
+
+    --fondo-principal:  #010d20 ;
+     
+    --Fondo:#798c9a;
+    --sombras:#3498db;
+
+}
+/*style="color:#7f94c2;"
+style="color:#33497e;"
+style="color:#133991;"
+style="color:#3476ca;"
+style="color:#2c5a94;"
+style="color:#01234f;"*/
+body{
+    margin: 0;
+   
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.div-principal{
+    background-color:var(--fondo-principal);
+    display: flex;
+  
+
+}
+
+.section-principal{
+    margin: 5px;
+    height: 100vh;
+    justify-content: center;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--sombras);
+    box-shadow: 1px 1px 20px 2px var(--sombras);
+    border-radius: 20px;
+    background-color: var(--Fondo);
+    font-weight: bold;
+    flex-flow: column;
+    
+} 
+
+h3{
+    opacity: 0.6;
+}
+
+
+
+.legion-HUB{
+  
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight:bolder;
+    
+
+   
+
+
+    background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(5, 3, 68, 1) 13%, rgba(7, 6, 93, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(8, 25, 132, 1) 40%, rgba(7, 45, 145, 1) 47%, rgba(6, 66, 159, 1) 53%, rgba(5, 94, 177, 1) 62%, rgba(4, 127, 199, 1) 73%, rgba(3, 159, 220, 1) 83%, rgba(2, 184, 236, 1) 91%, rgba(0, 212, 255, 1) 100%);
+    background-clip: text;
+    background-size: 500%;
+    color: transparent;
+    animation: color1 10s linear infinite;
+
+   
+}
+
+@keyframes color1{
+    from{
+        background-position: 0% 250%; 
+    }
+    to{
+        background-position: 250% 500%;
+    }
+}
+
+
+.contenido-promocional{
+    font-size: 14px;
+    text-align: center;
+    width: 230px;
+    text-align: left;
+    
+}
+
+.enviar{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 40px;
+    margin: 10px;
+    gap: 30px;
+   
+
+}
+
+
+::placeholder{
+    color: white;
+}
+
+
+
+
+
+input{
+   
+    border: none;
+    background: none;
+    width: clamp(70px, 230px, 510px);
+    border-bottom: 3px solid white;
+    position: relative;
+    outline: none;
+    color: white;
+    
+   
+}
+
+.create-account{
+    background-color: #081D86;
+    border: none;
+    opacity: 0.7;
+    
+    padding: 7px 73px;
+    border-radius: 7px;
+   transition: 0.5s;
+}
+
+
+.create-account:hover{
+    border: white solid 3px;
+    
+    transform: scale(1.2);
+    transform: translateY(-5px);
+
+}
+
+.logeos{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    
+}
+
+.logeos button{
+    opacity: 0.7;
+    background-color: black;
+    border: none;
+    transition: 0.5s;
+    padding: 7px 53px;
+    border-radius: 7px;
+    background-color: #081D86;
+
+}
+
+
+
+
+.logeos button:hover{
+    border: white solid 3px;
+    background-color: gray;
+    transform: scale(1.2);
+    transform: translateY(-5px);
+
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.login a{
+    margin-left:7px ;
+
+}
+
+
+
+.imagen{
+    height: 18cm;
+    width: 70%;
+    
+    margin-left:10px ;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-right: 10px;
+   
+
+}
+
+.imagen-fondo{
+    width: 95%;
+    height: 100vh;
+    
+    border-radius: 50px 0px 50px 0px;
+    box-shadow:0 0 20px 2px var(--sombras) ;
+
+
+}
+
+
+
+
+.Email {
+    opacity: 1;
+    transform: translateX(0); /* Posición inicial */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animación suave */
+  }
+  
+  .hidden {
+    opacity: 0; /* Se desvanece */
+    transform: translateX(-200px); /* Se mueve hacia la izquierda */
+  }
+  
+  .visible {
+    opacity: 1; /* Se hace visible */
+    transform: translateX(0); /* Regresa a su posición original */
+  }
+
+  
+ 
+
+
+
+
+
+
+
+/*max width es el valor maximo que t=debe tener el vh para que se aplique el css
+o sea que se aplicaran mientras la medida sea menor al maximo que puse
+*/
+/*@media (max-width:844px) and (min-width:667px){*/
+
+
+@media (max-width: 880px ) and (min-width: 360px) {
+
+    .section-principal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 70vw;
+        height: 78vh;
+        padding: 30px 20px;
+      
+    }
+
+    .div-principal{
+        background-image: url("imagenes/Imagen\ de\ WhatsApp\ 2025-04-14\ a\ las\ 00.58.31_6f476937.jpg");
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        
+      
+    
+    }
+
+    
+
+    .imagen{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .imagen-fondo{display: none;}
+
+    .create-account{
+        padding: 1px 79px;
+    }
+
+    .login h3{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .login a{
+        margin-right: 10px;
+        
+    }
+
+    
+}
+
+
+
+
+
