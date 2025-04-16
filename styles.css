@@ -216,33 +216,7 @@ input{
 
 
 }
-
-
-
-
-.Email {
-    opacity: 1;
-    transform: translateX(0); /* Posición inicial */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Animación suave */
-  }
-  
-  .hidden {
-    opacity: 0; /* Se desvanece */
-    transform: translateX(-200px); /* Se mueve hacia la izquierda */
-  }
-  
-  .visible {
-    opacity: 1; /* Se hace visible */
-    transform: translateX(0); /* Regresa a su posición original */
-  }
-
-  
  
-
-
-
-
-
 
 
 /*max width es el valor maximo que t=debe tener el vh para que se aplique el css
